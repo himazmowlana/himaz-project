@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header
+{
+    background: Grey;
+    height: 80px;
+    margin-bottom: 800px;
+}
+
+.payment-address label
+{
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+.payment-address input
+{
+    padding: 10px;
+    width: 300px;
+    border-radius: 30px;
+    border-style: dashed;
+    border-spacing: 100px;
+}
+
+.left-box
+{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 1000px;
+    height: 400px;
+}
+.right-box
+{
+    position: absolute;
+    right: -20%;
+    top: 24%;
+    box-sizing: border-box;
+    padding: 60px;
+    width: 1000px;
+    height: 100px;
+}
+
+.btn
+{
+    padding: 10px;
+    font-size: 15px;
+    color: whitesmoke;
+    background: #5F9EA0;
+    border: none;
+    border-radius: 5px;
+}

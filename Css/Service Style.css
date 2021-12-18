@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.right-menu li
+{
+    display: inline-block;
+    margin-top: 30px !important;    
+}
+.right-menu li .fa
+{
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.navbar-brand img
+{
+    height: 60px;
+    width: 160px;
+}
+.navbar-brand 
+{
+    left: 50%;
+    top: 25px;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.header
+{
+    background: #f5f6fc;
+    margin-bottom: 80px;
+}
+
+.navbar
+{
+    padding: 0 35px !important;
+}
+
+.navbar-toggler
+{
+    border: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin-top: 30px;
+}
+.navbar-toggler .fa
+{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:700px) {
+    .navbar-brand img{
+        margin-top: -10px;
+        height: 40px;
+        width: 130px;
+    }
+
+    .right-menu li .fa{
+    font-size: 18px;
+    margin-right: -1px;
+    }
+}
+
+/*-----Video-----*/
+.videoBG
+{
+    position: fixed;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9)
+{
+.videoBG
+    {
+    width: 100%;
+    height: auto;    
+    }
+}
+@media (max-aspect-ratio: 16/9)
+{
+.videoBG
+    {
+    width: auto;
+    height: 100%;    
+    }
+}
+@media (max-width: 767px)
+{
+.videoBG
+    {
+    display: none;    
+    }
+body
+    {
+        background: url('Screenshot.png');
+        background-size: cover;
+    }
+}
+
+/*-----Service-----*/
+.Service-Message-box
+{
+    margin: 80px 0;
+}
+
+.title-style-01 h2
+{
+    padding: 40px 0;
+}
+.title-style-01
+{
+    margin: 0 auto 80px;
+    height: 120px;
+    width: 80%;
+    max-width: 700px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 4px 5px 0 rgba(0,0,50,0.5);
+}
+.title-style-01::after
+{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color: lightcoral;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+}
+.title-style-01::before
+{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color: lightpink;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    z-index: -1;
+}
+
+/*-----Locker Room-----*/
+.Locker-Room
+{
+    padding: 20px 0;
+}
+
+.locker-img
+{
+    position: relative;
+}
+.locker-img img
+{
+    height: 70%;
+    width: 40%;
+}
+.center 
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media only screen and (max-width:700px) {
+    .locker-img img{
+    height: 60%;
+    width: 80%;
+    }
+}
+
+/*-----Cardio Room-----*/
+.Cardio-Room
+{
+    padding: 20px 0;
+}
+
+.cardio-img
+{
+    position: relative;
+}
+.cardio-img img
+{
+    height: 70%;
+    width: 40%;
+}
+.center 
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media only screen and (max-width:700px) {
+    .cardio-img img{
+    height: 60%;
+    width: 80%;
+    }
+}
+
+/*-----Crossfitt Area-----*/
+.Crossfit-Area
+{
+    padding: 20px 0;
+}
+.crossfit-img
+{
+    position: relative;
+}
+.crossfit-img img
+{
+    height: 70%;
+    width: 40%;
+}
+.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media only screen and (max-width:700px) {
+    .crossfit-img img{
+    height: 60%;
+    width: 80%;
+    }
+}
+
+/*-----Protein Cafe-----*/
+.Protein-Cafe
+{
+    padding: 20px 0;
+}
+
+.cafe-img
+{
+    position: relative;
+}
+.cafe-img img
+{
+    height: 70%;
+    width: 40%;
+}
+.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media only screen and (max-width:700px) {
+    .cafe-img img{
+    height: 60%;
+    width: 80%;
+    }
+}
+
+/*-----Recovery Room-----*/
+.recovery-img
+{
+    position: relative;
+}
+.recovery-img img
+{
+    height: 70%;
+    width: 40%;
+}
+.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media only screen and (max-width:700px) {
+    .recovery-img img{
+    height: 60%;
+    width: 80%;
+    }
+}
+
+/*-----Design-----*/
+.design
+{
+    text-decoration-line: overline;
+}

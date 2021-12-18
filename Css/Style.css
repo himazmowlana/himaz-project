@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.right-menu li
+{
+    display: inline-block;
+    margin-top: 30px !important;    
+}
+.right-menu li .fa
+{
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.navbar-brand img
+{
+    height: 60px;
+    width: 160px;
+}
+.navbar-brand 
+{
+    left: 50%;
+    top: 25px;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.header
+{
+    background: #f5f6fc;
+    margin-bottom: 80px;
+}
+
+.navbar
+{
+    padding: 0 35px !important;
+}
+
+.navbar-toggler
+{
+    border: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin-top: 30px;
+}
+.navbar-toggler .fa
+{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:700px) {
+    .navbar-brand img{
+        margin-top: -10px;
+        height: 40px;
+        width: 130px;
+    }
+
+    .right-menu li .fa{
+    font-size: 18px;
+    margin-right: -1px;
+    }
+
+}
+
+/*-----Video-----*/
+.videoBG
+{
+    position: fixed;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9)
+{
+.videoBG
+    {
+    width: 100%;
+    height: auto;    
+    }
+}
+@media (max-aspect-ratio: 16/9)
+{
+.videoBG
+    {
+    width: auto;
+    height: 100%;    
+    }
+}
+@media (max-width: 767px)
+{
+.videoBG
+    {
+    display: none;    
+    }
+body
+    {
+        background: url('Screenshot.png');
+        background-size: cover;
+    }
+}
+
+/*-----Banner-----*/
+.banner-img
+{
+    margin: 100px 115px;
+    width: 70%;
+}
+.banner-img img
+{
+    width: 100%;
+    margin-bottom: -80px;
+}
+.banner
+{
+    position: relative;
+}
+
+.banner-title
+{
+    position: absolute;
+    left: 63%;
+    top: 30%;
+}
+.banner-title h1
+{
+    font-size: 55px;
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+    line-height: 100px;
+    padding: 0px 10px 0 10px;
+}
+.nav-item
+{
+  right: 10%;  
+}
+
+@media only screen and (max-width:700px) {
+    .banner-img{
+        margin: 20px 40px;
+        width: 70%;
+    }
+    .banner-title h1{
+        font-size: 20px;
+        background: rgba(0,0,0,0.75);
+        color: #fff;
+        line-height: 25px;
+        padding: 0px 10px 0 10px;
+    }
+}
+
+/*-----Fitness and Strength (Welcome)*/
+.Welcome
+{
+    padding: 20px 0;
+}
+.title-style4
+{
+    padding: 40px 0;
+}
+
+@media only screen and (max-width:700px){
+    .welcome{
+        padding: 5px 0;
+    }
+}
+
+/*-----Banner-----*/
+.banner-img-02
+{
+    margin: 100px 115px;
+    width: 70%;
+}
+.banner-img02 img
+{
+    width: 100%;
+    margin-bottom: -80px;
+}
+
+/*-----Lifter Image-----*/
+.lifter-img
+{
+    position: relative;
+}
+.lifter-img img
+{
+    height: 70%;
+    width: 40%;
+}
+.center 
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@media only screen and (max-width:700px) {
+.lifter-img{
+    height: 60%;
+    width: 100%;
+    margin-bottom: -130px;
+    }
+}
+/*-----Slideshow-----*/
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #9c9e9c;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #5a5a58;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: lightblue;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: darkcyan;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4.5s;
+  animation-name: fade;
+  animation-duration: 4.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*-----Design-----*/
+.design
+{
+    text-decoration-line: overline;
+    text-decoration-style: double;
+}

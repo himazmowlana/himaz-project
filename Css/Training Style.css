@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links
+{
+    display: none;
+}
+.nav-items:hover .nav-links
+{
+    display: block;
+    padding: 10px;
+}
+
+.right-menu li
+{
+    display: inline-block;
+    margin-top: 30px !important;    
+}
+.right-menu li .fa
+{
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.navbar-brand img
+{
+    height: 60px;
+    width: 160px;
+}
+.navbar-brand 
+{
+    left: 50%;
+    top: 25px;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.header
+{
+    background: #f5f6fc;
+    margin-bottom: 80px;
+}
+
+.navbar
+{
+    padding: 0 35px !important;
+}
+
+.navbar-toggler
+{
+    border: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin-top: 30px;
+}
+.navbar-toggler .fa
+{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:700px) {
+    .navbar-brand img{
+        margin-top: -10px;
+        height: 40px;
+        width: 130px;
+    }
+}
+
+/*-----Slideshow-----*/
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4.5s;
+  animation-name: fade;
+  animation-duration: 4.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*-----Banner-----*/
+.banner-img
+{
+    margin: 100px 115px;
+    width: 70%;
+}
+.banner-img img
+{
+    width: 100%;
+    margin-bottom: -60px;
+}
+.banner
+{
+    position: relative;
+}
+
+.banner-title
+{
+    position: absolute;
+    left: 63%;
+    top: 30%;
+}
+.banner-title h1
+{
+    font-size: 55px;
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+    line-height: 70px;
+    padding: 0px 10px 0 10px;
+}
+.nav-item
+{
+  right: 10%;  
+}
+
+@media only screen and (max-width:700px) {
+    .banner-img{
+        margin: 20px 40px;
+        width: 70%;
+    }
+    .banner-title h1{
+        font-size: 18px;
+        background: rgba(0,0,0,0.75);
+        color: #fff;
+        line-height: 25px;
+        padding: 0px 10px 0 10px;
+    }
+}
+
+/*-----Packages-----*/
+.package-box
+{
+    margin: 10px 0;
+}
+
+.title-style-01 h2
+{
+    padding: 40px 0;
+}
+.title-style-01
+{
+    margin: 0 auto 80px;
+    height: 120px;
+    width: 80%;
+    max-width: 700px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 4px 5px 0 rgba(0,0,50,0.5);
+}
+.title-style-01::after
+{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color: peru;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+}
+.title-style-01::before
+{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color: rosybrown;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    z-index: -1;
+}
+
+.title-style3
+{
+    padding: 20px 0;
+}
+
+/*-----Trainers-----*/
+.Trainers-box
+{
+    margin: 80px 0;
+}
+
+.title-style-01 h2
+{
+    padding: 40px 0;
+}
+.title-style-01
+{
+    margin: 0 auto 80px;
+    height: 120px;
+    width: 80%;
+    max-width: 700px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 4px 5px 0 rgba(0,0,50,0.5);
+}
+.title-style-01::after
+{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color: darkorchid;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+}
+.title-style-01::before
+{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color: darkolivegreen;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    z-index: -1;
+}
+
+
+.card
+{
+    box-shadow: 0 40px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 402px;
+    height: 696px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    position: relative;
+}
+
+.card img
+{
+    width: 400px;
+    height: 500px;
+}
+
+.price
+{
+    color: cornflowerblue;
+    font-size: 22px;
+}
+.card button
+{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.card button:hover
+{
+    opacity: 0.7;
+}
+
+.row
+{
+    float: left;
+    padding-left: 90px;
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width:700px){
+    .card
+    {
+        box-shadow: 0 20px 4px 0 rgba(0, 0, 0, 0.2);
+        width: 300px;
+        height: 650px;
+        position: relative;
+        left: -40px;
+        margin-bottom: 30px;
+    }
+    .card button{
+    border: none;
+    outline: 0;
+    padding: 6px;
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    }
+    .row{
+    padding-bottom: 20px;
+    }
+}
+
+/*-----Design-----*/
+.design
+{
+    text-decoration-line: overline;
+}

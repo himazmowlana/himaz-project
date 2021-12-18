@@ -1,0 +1,229 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #222;
+}
+
+.calculate,
+.result{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: start;
+}
+
+.result{
+	display: none;
+}
+
+.calculate .title{
+	font-size: 6.5vmin;
+	font-weight: bold;
+	font-family: sans-serif;
+	background: -webkit-linear-gradient(45deg, #ff7400, #f4511e);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.calculate .gender{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 75%;
+}
+
+.calculate .gender div{
+	height: 32vmin;
+	width: 32vmin;
+	background: #232323;
+	box-shadow: 0 .5vmin 1vmin .6vmin #292929;
+	font-size: 20vmin;
+	font-weight: bold;
+	font-family: sans-serif;
+	text-align: center;
+	line-height: 32vmin;
+	cursor: pointer;
+}
+
+.calculate .gender div span{
+	background: #fff;
+	-webkit-background-clip: text; 
+	-webkit-text-fill-color: transparent;
+}
+
+.calculate .gender .male.active span{
+	background: -webkit-linear-gradient(45deg, #8e2de2, #4a00e0);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.calculate .gender .female.active span{
+	background: -webkit-linear-gradient(45deg, #f953c6, #b91d73);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.calculate .height,
+.calculate .weight{
+	margin-top: 4vmin;
+	width: 75%;
+	height: 32vmin;
+	background: #232323;
+	box-shadow: 0 .5vmin 1vmin .6vmin #292929;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	font-size: 5vmin;
+	font-weight: bold;
+	font-family: sans-serif;
+	color: #555;
+	cursor: pointer;
+}
+
+.calculate .height .val,
+.calculate .weight .val{
+	color: #fff;
+	font-size: 5vmin;
+	margin: 0;
+	margin-top: -2vmin;
+}
+
+.calculate .height .val i,
+.calculate .weight .val i{
+	text-align: center;
+	line-height: 6vmin;
+	font-size: 5vmin;
+	font-weight: bold;
+	padding: 3vmin;
+}
+
+.calculate .height .val span,
+.calculate .weight .val span{
+	font-size: 6vmin;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+.calculate .height input,
+.calculate .weight input{
+	-webkit-appearance: none;
+	width: 90%;
+	height: 3vmin;
+	background: #333;
+	border-radius: 50vmin;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.calculate .height input::-webkit-slider-thumb,
+.calculate .weight input::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	height: 3vmin;
+	width: 3vmin;
+	background: linear-gradient(45deg, #ff7400, #f4511e);
+	box-shadow: -68vmin 0 0 68vmin #f4511e;
+	cursor: pointer;
+}
+
+.calculate .calc,
+.result .recalc{
+	height: 14vmin;
+	width: 75%;
+	line-height: 14vmin;
+	margin-top: 6vmin;
+	color: #fff;
+	font-size: 5vmin;
+	font-weight: bold;
+	font-family: sans-serif;
+	background: #232323;
+	box-shadow: 0 .5vmin 1vmin .6vmin #292929;
+	text-align: center;
+	cursor: pointer;
+}
+
+.calculate .calc:hover,
+.result .recalc:hover{
+	color: #f4511e;
+}
+
+#a1{
+	text-decoration: none;
+}
+
+.calculate .btn-outline{
+	outline: none;
+	display: block;
+	border: solid 1px #814716;
+	font-size: 5vmin;
+	font-weight: 500;
+	line-height: 6vmin;
+	margin-top: 3vmin;
+	padding: 16px 30px;
+	border-radius: 30px;
+	background: #f4511e;
+	color: rgb(29, 27, 27);
+	cursor: pointer;
+	transition: all 0.3s linear;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.calculate .btn-outline:hover,
+.calculate .btn-outline:focus{
+	background: #e99930;
+	color: #fff;
+}
+
+.calculate .btn-outline:active{
+	background: #fff;
+	color: #1e96e6;
+}
+
+.result .recalc{
+	margin-top: 20vmin;
+	cursor: pointer;
+}
+
+.result .bmi{
+	height: 40vmin;
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #232323;
+	box-shadow: 0 .5vmin 1vmin .6vmin #292929;
+	margin-top: 5vmin;
+}
+
+.result .bmi .title{
+	color: #555;
+	font-size: 5vmin;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 6.5vmin;
+}
+
+.result .bmi .val{
+	font-size: 7vmin;
+	font-weight: bold;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+.result .text {
+	font-size: 5vmin;
+	font-weight: bold;
+	font-family: sans-serif;
+	color: #fff;
+	width: 75%;
+	text-align: center;
+	margin-top: 20vmin;
+}
+
+#down{
+	text-decoration: none;
+}

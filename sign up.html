@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="short icon" type="image/png" href="Images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="sign%20up%20style.css">
+    </head>
+    <body>
+<!-----Background Image----->
+<style>
+    body {
+      background-image: url('Images/D6.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+</style>
+        <div id="login-box">
+            <div class="left-box">
+                <h1>Sign Up</h1>
+                <form action="./php/sign_up.php" method="post" onsubmit="return validateForm()" name="mySignup" id="mySignup">
+                <input type="text" name="username" placeholder="Username"/>
+                <input type="text" name="email" placeholder="Email"/>
+                <input type="password" name="password" placeholder="Password"/>
+                <input type="password" name="password2" placeholder="Re-type Password"/>
+                <input type="submit" name="signup-button" value="Sign Up"/>
+                </form>
+				<a href="php/login.php">
+                    <button>Back</button></a>
+             </div>
+    
+            <div class="right-box">
+                <span class="signinwith">Sign in with<br/>Social Network
+                </span>
+                <button class="Social Facebook">Login in with Facebook</button>
+                <button class="Social Twitter">Login in with Twitter</button>
+                <button class="Social Google">Login in with Google+</button>
+            </div>
+            <div class="or">OR</div>        
+        </div>
+      </body>
+</html>
+<script>
+     function validateForm() {
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        var  username = document.forms["mySignup"]["username"].value;
+        if (username == "") {            
+            alert("Username Required");
+            return false;
+        }
+
+        var  email = document.forms["mySignup"]["email"].value;
+        if (email == "") {
+            alert("Email Required");
+            return false;
+        }else{
+            //alert(email);
+            if (!email.match(validRegex)) {
+                alert("Need a valid Email ID");
+                return false;
+            }
+
+        }
+
+        var  password = document.forms["mySignup"]["password"].value;
+        if (password == "") {
+            alert("Password Required");
+            return false;
+        }else{
+            //alert(password);
+            if (!password.match(validRegex)) {
+                alert("Password must contain special charactors");
+                return false;
+            }
+
+        }
+
+        var  password2 = document.forms["mySignup"]["password2"].value;
+        if (password2 == "") {
+            alert("Re-type Password");
+            return false;
+        }else{
+            //alert(password2);
+            if (!password2.match(validRegex)) {
+                alert("Your Password must match the above charactors");
+                return false;
+            }
+
+        }
+
+     }
+
+    </script>
